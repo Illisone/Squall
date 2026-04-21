@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шквал | Автослон</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
+        </svg>
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 1 1 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 1 1 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41 1 1 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41a.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+        </svg>
+    </button>
+
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">
+                <div class="nav__logo-mark">
+                    <img src="media/logo.png alt="Автослон" class="nav__logo-img">
+                </div>
+                <span class="nav__logo-text">АВТОСЛОН</span>
+            </a>
+            <div class="nav__links">
+                <a href="#capabilities" class="nav__link">Возможности</a>
+                <a href="#specs" class="nav__link">Характеристики</a>
+                <a href="#gallery" class="nav__link">Галерея</a>
+                <a href="#contact" class="nav__link nav__link--cta">Заказать</a>
+            </div>
+            <button class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__backdrop"></div>
+        <div class="mobile-menu__panel">
+            <div class="mobile-menu__links">
+                <a href="#capabilities" class="mobile-menu__link">Возможности</a>
+                <a href="#specs" class="mobile-menu__link">Характеристики</a>
+                <a href="#gallery" class="mobile-menu__link">Галерея</a>
+                <a href="#contact" class="mobile-menu__link mobile-menu__link--accent">Заказать</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__parallax" id="heroParallax">
+                <video class="hero__video" id="heroVideo" autoplay muted loop playsinline poster="media/ВАШ_ФАЙЛ_ПОСТЕР">
+                    <source src="media/ВАШ_ФАЙЛ_ВИДЕО" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero__gradient"></div>
+        </div>
+        <div class="hero__content">
+            <div class="container">
+                <div class="hero__eyebrow scramble-text" data-text="НОВЫЙ ВЕЗДЕХОД 2026">НОВЫЙ ВЕЗДЕХОД 2026</div>
+                <h1 class="hero__title">
+                    <span class="hero__title-line reveal-text">ШКВАЛ</span>
+                    <span class="hero__title-sub reveal-text" data-delay="0.2">Предел возможного</span>
+                </h1>
+                <p class="hero__desc fade-up" data-delay="0.4">
+                    Полный привод. Увеличенный клиренс. Абсолютная проходимость 
+                    в любых условиях — от снежных полей до каменистых склонов.
+                </p>
+                <div class="hero__actions fade-up" data-delay="0.6">
+                    <a href="#contact" class="btn btn--primary btn--large">
+                        <span>Заказать тест-драйв</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <button class="btn btn--ghost btn--large" id="playVideo">
+                        <span class="btn__play-icon">▶</span>
+                        <span>Смотреть видео</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+        </div>
+        <div class="hero__particles" id="particles"></div>
+    </section>
+
+    <section class="section section--capabilities" id="capabilities">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <div class="section__label" data-aos="fade-up">Возможности</div>
+                <h2 class="section__title" data-aos="fade-up" data-aos-delay="100">Создан для бездорожья</h2>
+                <p class="section__subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Три ключевые характеристики, которые делают Шквал непревзойдённым
+                </p>
+            </div>
+            <div class="capabilities__grid">
+                <article class="capability-card tilt-card" data-tilt>
+                    <div class="capability-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="capability-card__title">Проходимость</h3>
+                    <p class="capability-card__text">
+                        Полный привод 4×4 с тремя блокировками дифференциалов. 
+                        Преодолевает броды до 1.2 метра.
+                    </p>
+                    <ul class="capability-card__list">
+                        <li><span>Угол въезда 42°</span></li>
+                        <li><span>Клиренс 450 мм</span></li>
+                        <li><span>Герметичность IP68</span></li>
+                    </ul>
+                </article>
+                <article class="capability-card tilt-card capability-card--featured" data-tilt>
+                    <div class="capability-card__badge">TOP</div>
+                    <div class="capability-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="capability-card__title">Мощность</h3>
+                    <p class="capability-card__text">
+                        V8 5.0 Twin-Turbo выдаёт 650 л.с. и 850 Н·м крутящего момента. 
+                        Разгон до 100 км/ч за 4.8 секунды.
+                    </p>
+                    <ul class="capability-card__list">
+                        <li><span>650 л.с. / 850 Н·м</span></li>
+                        <li><span>0-100 км/ч за 4.8с</span></li>
+                        <li><span>АКПП 8-ступенчатая</span></li>
+                    </ul>
+                </article>
+                <article class="capability-card tilt-card" data-tilt>
+                    <div class="capability-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="capability-card__title">Надёжность</h3>
+                    <p class="capability-card__text">
+                        Усиленная рама из хром-молибденовой стали. Защита днища 
+                        и КПП. Ресурс 500 000 км.
+                    </p>
+                    <ul class="capability-card__list">
+                        <li><span>Рама усиленная</span></li>
+                        <li><span>Защита днища 8 мм</span></li>
+                        <li><span>Ресурс 500 тыс. км</span></li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--specs" id="specs">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <div class="section__label" data-aos="fade-up">Спецификации</div>
+                <h2 class="section__title" data-aos="fade-up" data-aos-delay="100">Технические данные</h2>
+            </div>
+            <div class="specs__container">
+                <div class="specs__content" data-aos="fade-right">
+                    <div class="specs-carousel">
+                        <button class="specs-carousel__btn specs-carousel__btn--up" id="specsBtnUp" aria-label="Предыдущий">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 15l-6-6-6 6"/>
+                            </svg>
+                        </button>
+                        <div class="specs-carousel__viewport">
+                            <div class="specs-carousel__track" id="specsTrack">
+                                <div class="spec-item active" data-index="0">
+                                    <div class="spec-item__icon">⚡</div>
+                                    <div class="spec-item__content">
+                                        <h4>Двигатель V8 Twin-Turbo</h4>
+                                        <p>650 л.с., 850 Н·м крутящего момента</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item" data-index="1">
+                                    <div class="spec-item__icon">⚙️</div>
+                                    <div class="spec-item__content">
+                                        <h4>Полный привод 4×4</h4>
+                                        <p>3 дифференциала с электронной блокировкой</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item" data-index="2">
+                                    <div class="spec-item__icon">📏</div>
+                                    <div class="spec-item__content">
+                                        <h4>Клиренс 450 мм</h4>
+                                        <p>Пневматическая подвеска с 3 режимами высоты</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item" data-index="3">
+                                    <div class="spec-item__icon">🌊</div>
+                                    <div class="spec-item__content">
+                                        <h4>Преодоление брода 1200 мм</h4>
+                                        <p>Полная герметичность электрики IP68</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item" data-index="4">
+                                    <div class="spec-item__icon">🛞</div>
+                                    <div class="spec-item__content">
+                                        <h4>Шины 38" M/T</h4>
+                                        <p>Грязевой протектор, усиленные боковины</p>
+                                    </div>
+                                </div>
+                                <div class="spec-item" data-index="5">
+                                    <div class="spec-item__icon">⚖️</div>
+                                    <div class="spec-item__content">
+                                        <h4>Грузоподъёмность 1500 кг</h4>
+                                        <p>На багажнике при полной массе</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="specs-carousel__btn specs-carousel__btn--down" id="specsBtnDown" aria-label="Следующий">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <div class="specs-carousel__indicators" id="specsIndicators">
+                            <span class="active" data-index="0"></span>
+                            <span data-index="1"></span>
+                            <span data-index="2"></span>
+                            <span data-index="3"></span>
+                            <span data-index="4"></span>
+                            <span data-index="5"></span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn--primary btn--large" style="margin-top: 30px; width: 100%;">
+                        <span>Заказать сейчас</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="specs__visual" data-aos="fade-left">
+                    <div class="specs__image-wrapper">
+                        <div class="specs__image-real">
+                            <img src="media/ВАШ_ФАЙЛ_ФОТО" alt="Шквал — вид сбоку" class="specs__image-img">
+                        </div>
+                        <div class="specs__floating-card">
+                            <div class="specs__stat">
+                                <div class="specs__stat-value">4.8s</div>
+                                <div class="specs__stat-label">0-100 км/ч</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gallery" id="gallery">
+        <div class="container">
+            <div class="section__header section__header--center">
+                <div class="section__label" data-aos="fade-up">Галерея</div>
+                <h2 class="section__title" data-aos="fade-up" data-aos-delay="100">В действии</h2>
+            </div>
+            <div class="gallery__grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery__item gallery__item--large reveal-image">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%)">
+                        <span style="color: #0066CC; font-weight: 600;">Шквал в снегу</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <span class="gallery__tag">Зима</span>
+                        <h3>Снежные поля</h3>
+                    </div>
+                </div>
+                <div class="gallery__item reveal-image">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)">
+                        <span style="color: #dc2626; font-weight: 600;">Детали</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Колёса 38"</h3>
+                    </div>
+                </div>
+                <div class="gallery__item reveal-image">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)">
+                        <span style="color: #d97706; font-weight: 600;">Бездорожье</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <h3>Грязь и вода</h3>
+                    </div>
+                </div>
+                <div class="gallery__item gallery__item--wide reveal-image">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)">
+                        <span style="color: #0066CC; font-weight: 600;">Видео тест-драйва</span>
+                    </div>
+                    <button class="gallery__play-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="gallery__carousel-container" data-aos="fade-up" data-aos-delay="300">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <div class="gallery__carousel" id="galleryCarousel">
+                    <div class="carousel__item"><div class="carousel__placeholder">Фото 1</div></div>
+                    <div class="carousel__item"><div class="carousel__placeholder">Фото 2</div></div>
+                    <div class="carousel__item"><div class="carousel__placeholder">Фото 3</div></div>
+                    <div class="carousel__item"><div class="carousel__placeholder">Фото 4</div></div>
+                    <div class="carousel__item"><div class="carousel__placeholder">Фото 5</div></div>
+                    <div class="carousel__item"><div class="carousel__placeholder">Фото 6</div></div>
+                    <div class="carousel__item"><div class="carousel__placeholder">Фото 7</div></div>
+                    <div class="carousel__item"><div class="carousel__placeholder">Фото 8</div></div>
+                </div>
+                <button class="carousel__btn carousel__btn--next" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="countdown-section">
+        <div class="countdown-section__bg"></div>
+        <div class="container">
+            <div class="countdown-section__content" data-aos="zoom-in">
+                <div class="countdown-section__label">Скоро в продаже</div>
+                <h2 class="countdown-section__title">Старт продаж</h2>
+                <div class="countdown">
+                    <div class="countdown__item">
+                        <div class="countdown__value" id="days">00</div>
+                        <div class="countdown__label">Дней</div>
+                    </div>
+                    <div class="countdown__separator">:</div>
+                    <div class="countdown__item">
+                        <div class="countdown__value" id="hours">00</div>
+                        <div class="countdown__label">Часов</div>
+                    </div>
+                    <div class="countdown__separator">:</div>
+                    <div class="countdown__item">
+                        <div class="countdown__value" id="minutes">00</div>
+                        <div class="countdown__label">Минут</div>
+                    </div>
+                    <div class="countdown__separator">:</div>
+                    <div class="countdown__item">
+                        <div class="countdown__value" id="seconds">00</div>
+                        <div class="countdown__label">Секунд</div>
+                    </div>
+                </div>
+                <form class="notify-form" id="notifyForm">
+                    <div class="form__group form__group--inline">
+                        <input type="email" class="form__input form__input--large" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn--primary btn--large">Узнать первым</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+        <div class="container">
+            <div class="contact__grid">
+                <div class="contact__info" data-aos="fade-right">
+                    <div class="section__header">
+                        <div class="section__label">Контакты</div>
+                        <h2 class="section__title">Связаться с нами</h2>
+                    </div>
+                    <p class="contact__text">
+                        Оставьте заявку на тест-драйв или консультацию. 
+                        Наши специалисты ответят на все вопросы.
+                    </p>
+                    <div class="contact__details">
+                        <div class="contact-card">
+                            <div class="contact-card__icon">📞</div>
+                            <div>
+                                <div class="contact-card__label">Телефон</div>
+                                <a href="tel:+78001234567" class="contact-card__value">8 (800) 000-00-00</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card__icon">✉️</div>
+                            <div>
+                                <div class="contact-card__label">Email</div>
+                                <a href="mailto:info@autoslon.ru" class="contact-card__value">info@autoslon.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form__floating">
+                            <input type="text" class="form__input" id="name" placeholder=" " required>
+                            <label for="name">Ваше имя</label>
+                        </div>
+                        <div class="form__floating">
+                            <input type="tel" class="form__input" id="phone" placeholder=" " required>
+                            <label for="phone">Телефон</label>
+                        </div>
+                        <div class="form__floating">
+                            <select class="form__input" id="interest">
+                                <option value="test">Тест-драйв</option>
+                                <option value="order">Предзаказ</option>
+                                <option value="consult">Консультация</option>
+                            </select>
+                            <label for="interest">Интересует</label>
+                        </div>
+                        <div class="form__floating">
+                            <textarea class="form__input" id="message" rows="3" placeholder=" "></textarea>
+                            <label for="message">Сообщение</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large btn--full">
+                            <span>Отправить заявку</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">АВТОСЛОН</div>
+                </div>
+                <div class="footer__links">
+                    <a href="#capabilities">Возможности</a>
+                    <a href="#specs">Характеристики</a>
+                    <a href="#gallery">Галерея</a>
+                </div>
+                <div class="footer__socials">
+                    <a href="https://t.me/your_channel" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                        </svg>
+                    </a>
+                    <a href="https://max.ru/your_channel" target="_blank" rel="noopener noreferrer" class="footer__social footer__social--max" aria-label="MAX">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+                            <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="bold" fill="currentColor">M</text>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2026 Автослон. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="videoModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeModal">×</button>
+            <div class="modal__video-container">
+                <video controls id="modalVideo">
+                    <source src="media/ВАШ_ФАЙЛ_ВИДЕО" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
