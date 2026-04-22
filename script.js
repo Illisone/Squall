@@ -129,17 +129,6 @@ document.querySelectorAll('.scramble-text').forEach(el => {
     el.addEventListener('mouseenter', () => { fx.setText(originalText); });
 });
 
-// Particles
-const particlesContainer = document.getElementById('particles');
-for (let i = 0; i < 50; i++) {
-    const particle = document.createElement('div');
-    particle.className = 'particle';
-    particle.style.left = Math.random() * 100 + '%';
-    particle.style.top = Math.random() * 100 + '%';
-    particle.style.animationDelay = Math.random() * 20 + 's';
-    particle.style.animationDuration = (15 + Math.random() * 10) + 's';
-    particlesContainer.appendChild(particle);
-}
 
 // Parallax Effect on Mouse Move for Hero
 const heroParallax = document.getElementById('heroParallax');
