@@ -23,6 +23,7 @@
 [data-theme="light"] {
     --color-bg: #fafafa;
     --color-surface: #ffffff;
+    --color-surface-0: #ffffffba;
     --color-surface-2: #f4f4f5;
     --color-surface-3: #e4e4e7;
     --color-text: #18181b;
@@ -39,6 +40,7 @@
 [data-theme="dark"] {
     --color-bg: #0a0b0d;
     --color-surface: #111215;
+    --color-surface-0: #111215c7;
     --color-surface-2: #1a1c20;
     --color-surface-3: #27272a;
     --color-text: #ffffff;
@@ -80,6 +82,8 @@ body {
     transition: all 0.3s;
     box-shadow: var(--shadow-lg);
     color: var(--color-text);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 .theme-toggle:hover {
     transform: scale(1.1) rotate(15deg);
@@ -181,12 +185,14 @@ h1, h2, h3, h4 {
     font-size: 20px;
     font-weight: 600;
     /* Овальная подложка как у пунктов меню */
-    background: var(--color-surface);
+    background: var(--color-surface-0);
     padding: 8px 30px;
     border-radius: var(--radius-full);
     border: 1px solid var(--color-border);
     box-shadow: var(--shadow-sm);
     transition: all 0.3s;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .nav__logo:hover {
@@ -213,11 +219,13 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     gap: 8px;
-    background: var(--color-surface);
+    background: var(--color-surface-0);
     padding: 8px;
     border-radius: var(--radius-full);
     border: 1px solid var(--color-border);
     box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 .nav__link {
     padding: 10px 20px;
