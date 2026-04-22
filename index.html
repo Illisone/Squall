@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шквал | Автослон</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
+            <path
+                d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-3.03 0-5.5-2.47-5.5-5.5 0-1.82.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z" />
         </svg>
         <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
-            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 1 1 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 1 1 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41 1 1 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41a.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+            <path
+                d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 1 1 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 1 1 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41 1 1 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41a.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z" />
         </svg>
     </button>
 
@@ -56,7 +62,8 @@
     <section class="hero" id="hero">
         <div class="hero__bg">
             <div class="hero__parallax" id="heroParallax">
-                <video class="hero__video" id="heroVideo" autoplay muted loop playsinline poster="media/ВАШ_ФАЙЛ_ПОСТЕР">
+                <video class="hero__video" id="heroVideo" autoplay muted loop playsinline
+                    poster="media/ВАШ_ФАЙЛ_ПОСТЕР">
                     <source src="media/bg.mp4" type="video/mp4">
                 </video>
             </div>
@@ -70,18 +77,23 @@
                     <span class="hero__title-sub reveal-text" data-delay="0.2">Предел возможного</span>
                 </h1>
                 <p class="hero__desc fade-up" data-delay="0.4">
-                    Полный привод. Увеличенный клиренс. Абсолютная проходимость 
+                    Полный привод. Увеличенный клиренс. Абсолютная проходимость
                     в любых условиях — от снежных полей до каменистых склонов.
                 </p>
                 <div class="hero__actions fade-up" data-delay="0.6">
                     <a href="#contact" class="btn btn--primary btn--large">
                         <span>Заказать тест-драйв</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                     </a>
                     <button class="btn btn--ghost btn--large" id="playVideo">
-                        <span class="btn__play-icon">▶</span>
+                        <span class="btn__play-icon"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                                <path
+                                    d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                            </svg></span>
                         <span>Смотреть видео</span>
                     </button>
                 </div>
@@ -102,12 +114,12 @@
                 <article class="capability-card tilt-card" data-tilt>
                     <div class="capability-card__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                         </svg>
                     </div>
                     <h3 class="capability-card__title">Проходимость</h3>
                     <p class="capability-card__text">
-                        Полный привод 4×4 с тремя блокировками дифференциалов. 
+                        Полный привод 4×4 с тремя блокировками дифференциалов.
                         Преодолевает броды до 1.2 метра.
                     </p>
                     <ul class="capability-card__list">
@@ -120,13 +132,13 @@
                     <div class="capability-card__badge">TOP</div>
                     <div class="capability-card__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
                         </svg>
                     </div>
                     <h3 class="capability-card__title">Мощность</h3>
                     <p class="capability-card__text">
-                        V8 5.0 Twin-Turbo выдаёт 650 л.с. и 850 Н·м крутящего момента. 
+                        V8 5.0 Twin-Turbo выдаёт 650 л.с. и 850 Н·м крутящего момента.
                         Разгон до 100 км/ч за 4.8 секунды.
                     </p>
                     <ul class="capability-card__list">
@@ -138,12 +150,12 @@
                 <article class="capability-card tilt-card" data-tilt>
                     <div class="capability-card__icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                         </svg>
                     </div>
                     <h3 class="capability-card__title">Надёжность</h3>
                     <p class="capability-card__text">
-                        Усиленная рама из хром-молибденовой стали. Защита днища 
+                        Усиленная рама из хром-молибденовой стали. Защита днища
                         и КПП. Ресурс 500 000 км.
                     </p>
                     <ul class="capability-card__list">
@@ -165,9 +177,10 @@
             <div class="specs__container">
                 <div class="specs__content" data-aos="fade-right">
                     <div class="specs-carousel">
-                        <button class="specs-carousel__btn specs-carousel__btn--up" id="specsBtnUp" aria-label="Предыдущий">
+                        <button class="specs-carousel__btn specs-carousel__btn--up" id="specsBtnUp"
+                            aria-label="Предыдущий">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 15l-6-6-6 6"/>
+                                <path d="M18 15l-6-6-6 6" />
                             </svg>
                         </button>
                         <div class="specs-carousel__viewport">
@@ -216,9 +229,10 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="specs-carousel__btn specs-carousel__btn--down" id="specsBtnDown" aria-label="Следующий">
+                        <button class="specs-carousel__btn specs-carousel__btn--down" id="specsBtnDown"
+                            aria-label="Следующий">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9l6 6 6-6"/>
+                                <path d="M6 9l6 6 6-6" />
                             </svg>
                         </button>
                         <div class="specs-carousel__indicators" id="specsIndicators">
@@ -232,8 +246,9 @@
                     </div>
                     <a href="#contact" class="btn btn--primary btn--large" style="margin-top: 30px; width: 100%;">
                         <span>Заказать сейчас</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                     </a>
                 </div>
@@ -262,7 +277,8 @@
             </div>
             <div class="gallery__grid" data-aos="fade-up" data-aos-delay="200">
                 <div class="gallery__item gallery__item--large reveal-image">
-                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%)">
+                    <div class="gallery__placeholder"
+                        style="background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%)">
                         <span style="color: #0066CC; font-weight: 600;">Шквал в снегу</span>
                     </div>
                     <div class="gallery__overlay">
@@ -271,7 +287,8 @@
                     </div>
                 </div>
                 <div class="gallery__item reveal-image">
-                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)">
+                    <div class="gallery__placeholder"
+                        style="background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)">
                         <span style="color: #dc2626; font-weight: 600;">Детали</span>
                     </div>
                     <div class="gallery__overlay">
@@ -279,7 +296,8 @@
                     </div>
                 </div>
                 <div class="gallery__item reveal-image">
-                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)">
+                    <div class="gallery__placeholder"
+                        style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)">
                         <span style="color: #d97706; font-weight: 600;">Бездорожье</span>
                     </div>
                     <div class="gallery__overlay">
@@ -287,12 +305,13 @@
                     </div>
                 </div>
                 <div class="gallery__item gallery__item--wide reveal-image">
-                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)">
+                    <div class="gallery__placeholder"
+                        style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%)">
                         <span style="color: #0066CC; font-weight: 600;">Видео тест-драйва</span>
                     </div>
                     <button class="gallery__play-btn">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M8 5v14l11-7z"/>
+                            <path d="M8 5v14l11-7z" />
                         </svg>
                     </button>
                 </div>
@@ -300,22 +319,38 @@
             <div class="gallery__carousel-container" data-aos="fade-up" data-aos-delay="300">
                 <button class="carousel__btn carousel__btn--prev" aria-label="Previous">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M15 18l-6-6 6-6"/>
+                        <path d="M15 18l-6-6 6-6" />
                     </svg>
                 </button>
                 <div class="gallery__carousel" id="galleryCarousel">
-                    <div class="carousel__item"><div class="carousel__placeholder">Фото 1</div></div>
-                    <div class="carousel__item"><div class="carousel__placeholder">Фото 2</div></div>
-                    <div class="carousel__item"><div class="carousel__placeholder">Фото 3</div></div>
-                    <div class="carousel__item"><div class="carousel__placeholder">Фото 4</div></div>
-                    <div class="carousel__item"><div class="carousel__placeholder">Фото 5</div></div>
-                    <div class="carousel__item"><div class="carousel__placeholder">Фото 6</div></div>
-                    <div class="carousel__item"><div class="carousel__placeholder">Фото 7</div></div>
-                    <div class="carousel__item"><div class="carousel__placeholder">Фото 8</div></div>
+                    <div class="carousel__item">
+                        <div class="carousel__placeholder">Фото 1</div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="carousel__placeholder">Фото 2</div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="carousel__placeholder">Фото 3</div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="carousel__placeholder">Фото 4</div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="carousel__placeholder">Фото 5</div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="carousel__placeholder">Фото 6</div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="carousel__placeholder">Фото 7</div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="carousel__placeholder">Фото 8</div>
+                    </div>
                 </div>
                 <button class="carousel__btn carousel__btn--next" aria-label="Next">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 18l6-6-6-6"/>
+                        <path d="M9 18l6-6-6-6" />
                     </svg>
                 </button>
             </div>
@@ -368,7 +403,7 @@
                         <h2 class="section__title">Связаться с нами</h2>
                     </div>
                     <p class="contact__text">
-                        Оставьте заявку на тест-драйв или консультацию. 
+                        Оставьте заявку на тест-драйв или консультацию.
                         Наши специалисты ответят на все вопросы.
                     </p>
                     <div class="contact__details">
@@ -412,8 +447,9 @@
                         </div>
                         <button type="submit" class="btn btn--primary btn--large btn--full">
                             <span>Отправить заявку</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
                             </svg>
                         </button>
                     </form>
@@ -434,15 +470,20 @@
                     <a href="#gallery">Галерея</a>
                 </div>
                 <div class="footer__socials">
-                    <a href="https://t.me/your_channel" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Telegram">
+                    <a href="https://t.me/your_channel" target="_blank" rel="noopener noreferrer" class="footer__social"
+                        aria-label="Telegram">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            <path
+                                d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
                         </svg>
                     </a>
-                    <a href="https://max.ru/your_channel" target="_blank" rel="noopener noreferrer" class="footer__social footer__social--max" aria-label="MAX">
+                    <a href="https://max.ru/your_channel" target="_blank" rel="noopener noreferrer"
+                        class="footer__social footer__social--max" aria-label="MAX">
                         <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-                            <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="bold" fill="currentColor">M</text>
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
+                            <text x="12" y="16" text-anchor="middle" font-size="8" font-weight="bold"
+                                fill="currentColor">M</text>
                         </svg>
                     </a>
                 </div>
@@ -468,4 +509,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
